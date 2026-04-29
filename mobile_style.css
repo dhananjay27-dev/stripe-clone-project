@@ -1,0 +1,434 @@
+/*-------------------------------------------------------------
+                    HAMBURGER MENU
+------------------------------------------------------------ */
+
+/* Hamburger menu icon  */
+
+/* icon  */
+#hamburger_icon {
+    width: 37px;
+    height: 35px;
+    background-color: #dadbf7;
+    border-radius: 3px;
+    display: none;
+}
+
+/* three bars */
+#hamburger_icon .bars {
+    background-color: #533afd;
+    width: 15px;
+    height: 2px;
+    margin: 1px 0;
+    border-radius: 2px;
+    transition: 0.5s ease;
+
+}
+
+.cross_icon .bar1 {
+    transition: 0.5s ease;
+    transform: translateY(4px) rotate(-45deg);
+    /* Cross icon functionality */
+}
+
+.cross_icon .bar2 {
+    transition: 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cross_icon .bar3 {
+    transition: 0.5s ease;
+    transform: translateY(-4px) rotate(45deg);
+}
+
+/* -----------------------------------------------------------
+                HAMBURGER MENU CONTENT STYLING
+-------------------------------------------------------------*/
+
+/* Hamburger content main section*/
+
+#hamburger_content {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+/* Hamburger menu navigations */
+.hamburger_navs {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 16px;
+}
+
+/* Hamburger menu navigations list*/
+.hamburger_navs ul li {
+    list-style: none;
+    padding: 15px 0;
+    border-bottom: 1px dashed #e5edf5;
+}
+
+/* Hamburger menu navigations links*/
+.hamburger_navs ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: #162a5c;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+/* Hamburger menu buttons container */
+.hamburger_btns {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+}
+
+/* Hamburger menu buttons */
+.hamburger_btns button {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+/* Hamburger menu Start now button */
+.hamburger_btns .start_btn {
+    margin-right: 20px;
+    background-color: #533afd;
+    color: #fff;
+    border: none;
+}
+
+/* Hamburger menu contact sales button */
+.hamburger_btns .sales_btn {
+    background-color: #fff;
+    color: #533afd;
+    border: 1px solid #e5edf5;
+}
+
+/* scrolling toggling */
+body.open-menu {
+    overflow: hidden;
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+                            MOBILE SIZE STYLING FOR RESPONSIVE WEB PAGES
+----------------------------------------------------------------------------------------------- */
+/* iPhoneSE */
+@media(max-width: 480px) {
+
+    /* Grid Lines on both sides of the page */
+    body::before,
+    body::after {
+        opacity: 0;
+    }
+
+    /* Header Section Style */
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        position: relative;
+        /* z-index: 1000; */
+    }
+
+    .header-section:hover {
+        box-shadow: none;
+        transform: none;
+    }
+
+    /* == Navigations on Header disabled == */
+    .navs {
+        display: none;
+    }
+
+    /* == buttons on Header disabled == */
+    .action-btn-container {
+        display: none;
+    }
+
+    /* ====    Hamburger Menu Visible  ===== */
+    #hamburger_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ====    Hamburger Menu Opening  ===== */
+    #hamburger_content.activate_menu {
+        transition: 1s ease-in-out;
+        display: block;
+    }
+
+    /* main section style */
+    .main-section {
+        overflow: hidden;
+    }
+
+    .main-hero-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Hero section title container */
+    .hero-title_container {
+        width: 100%;
+        padding: 0 16px;
+        margin: 0;
+        height: auto;
+    }
+
+    .hero_titles {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-bottom: 35px;
+        padding: 0;
+    }
+
+    .hero_titles .top_title {
+        font-size: 16px;
+        /* margin: 60px 4px 20px 4px; */
+        margin: 70px 4px 18px 4px;
+    }
+
+    .main_title .main_text {
+        font-size: 32px;
+        line-height: 35px;
+        margin-top: 38px;
+    }
+
+    .main_title .sub_text {
+        display: none;
+    }
+
+    /* Hero section button */
+    .title_btn {
+        width: 100%;
+        margin-top: 35px;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+
+    /* Hero section sliding logo */
+    .logo_marquee {
+        /* border-bottom: 1px solid black; */
+        width: 100%;
+        padding: 13px 0;
+        margin: 0;
+    }
+
+    /* Cards sections */
+    .feature-section {
+        width: 100%;
+        padding: 0;
+        margin-top: 75px;
+    }
+
+    .feature-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .feature-container .feature_title {
+        font-size: 11px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .feature-container .feature_card {
+        width: 100%;
+        padding: 0 10px;
+        margin: 40px 0;
+    }
+
+    .payment_card {
+        display: none;
+    }
+
+    .billing_card {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .billing_card img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .feature_second_card {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .feature_second_card .second_row_cards {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .second_row_cards img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .feature_third_card {
+        display: none;
+    }
+
+
+    /* Statistics section */
+    .stats-section {
+        width: 100%;
+        margin: 80px 0;
+        background: #161e51;
+    }
+
+    .section_container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .section_container .stats-title {
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin: 0;
+        color: #fff;
+        padding: 0;
+    }
+
+    .trust_indicators {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .indicators {
+        width: 100%;
+    }
+
+    .indicators h1 {
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .indicators p {
+        font-size: 16px;
+        color: #fff;
+    }
+
+    /* Call to action container */
+    .cta_main_container {
+        width: 100%;
+        height: max-content;
+        padding: 40px 0;
+        margin: 0;
+    }
+
+    .cta_content_container {
+        width: 100%;
+        height: max-content;
+        padding: 0 10px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .cta_ele1 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cta_ele2 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cta_ele3 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Footer */
+    .footer_section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .footer_container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns:1fr;
+    }
+
+    .footer_link_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 10px;
+        margin: 0;
+        border: none;
+    }
+
+    .link_col_one{
+        border: none;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .link_col_two{
+        border: none;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .link_col_two .developer_link{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .link_col_three{
+        border: none;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .link_col_four{
+        border: none;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+}

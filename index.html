@@ -1,11 +1,13 @@
 <head>
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stripe.com/in</title>
+    <title>Stripe | Financial Infrastructure to grow your revenue</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile_style.css">
+    <link rel="stylesheet" href="tablet_style.css">
 </head>
 
 <body>
@@ -22,42 +24,44 @@
                     </svg>
                 </div>
                 <div class=" navs">
-                    <ul class="list-container">
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Solutions</a></li>
-                        <li><a href="#">Developers</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Pricing</a></li>
-                    </ul>
+                        <ul class="list-container">
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
                 </div>
             </nav>
             <div class="action-btn-container">
                 <button class="secondary-btn">Sign in</button>
                 <button class="primary-btn">Contact sales</button>
             </div>
-            <div class="hamburger">
-                <div class="icon">
-                    <div class="bars bar1"></div>
-                    <div class="bars bar2"></div>
-                    <div class="bars bar3"></div>
-                </div>
-
-                <div class="content_container">
-                    <div class="navs">
-                        <ul>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Solutions</a></li>
-                            <li><a href="#">Developers</a></li>
-                            <li><a href="#">Resources</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Sign in</a></li>
-                        </ul>
-                    </div>
-                    <div class="btns"></div>
-                </div>
+            <div id="hamburger_icon">
+                <div class="bars bar1"></div>
+                <div class="bars bar2"></div>
+                <div class="bars bar3"></div>
             </div>
         </div>
     </header>
+
+    <section id="hamburger_content">
+        <div class="hamburger_navs">
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </div>
+        <div class="hamburger_btns">
+            <button class="start_btn">Start now</button>
+            <button class="sales_btn">Contact sales</button>
+        </div>
+        </div>
+    </section>
 
     <!-- Main Content of Web page -->
     <div class="main-section">
@@ -583,7 +587,7 @@
                         <h1>
                             Flexible solutions for every business model.
                             <p>Grow your business with a comprehensive set of payments and
-                            financial tools - designed to work individually or together.</p>
+                                financial tools - designed to work individually or together.</p>
                         </h1>
                     </div>
                     <div class="feature_card">
@@ -616,6 +620,9 @@
                             </p>
                             <img src="./Images/second_row_card03.png" alt="Card03">
                         </div>
+                        <div class="second_row_cards">
+                        <img src="/Images/tablet_view_img01.png" alt="">
+                    </div>
                     </div>
                     <div class="feature_third_card">
                         <img src="/Images/third_row_card.png" alt="">
@@ -628,21 +635,21 @@
                 <div class="section_container">
                     <h1 class="stats-title">The backbone of global commerce</h1>
                     <div class="trust_indicators">
-                        <div class="indicators">
+                        <div class="indicators indicator01">
                             <h1>135+</h1>
                             <p>currencies and payment methods supported</p>
                         </div>
-                        <div class="indicators">
+                        <div class="indicators indicator02">
                             <h1>US$1.9tn</h1>
                             <p>in payments volume processed in 2025</p>
                         </div>
-                        <div class="indicators">
+                        <div class="indicators indicator03">
                             <h1>99.999%</h1>
                             <p>historical uptime for Stripe services</p>
                         </div>
-                        <div class="indicators special_indicators">
+                        <div class="indicators indicator04">
                             <h1>200M+</h1>
-                            <p">active subscriptions managed on Stripe Billing</p>
+                            <p>active subscriptions managed on Stripe Billing</p>
                         </div>
                         <div class="highlight"></div>
                     </div>
@@ -840,7 +847,7 @@
                         <span>India (English)</span>
                     </button>
                     <span class="copyright">© 2026 Dhananjay Tulaskar
-                    <p>This project is for educational purposes only and is inspired by Stripe.</p>
+                        <p>This project is for educational purposes only and is inspired by Stripe.</p>
                     </span>
                 </div>
             </div>

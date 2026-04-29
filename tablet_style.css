@@ -1,0 +1,321 @@
+/* iPhoneSE */
+@media(min-width: 450px) and (max-width:800px) {
+
+    body::before,
+    body::after {
+        content: '';
+        top: 0;
+        bottom: 0;
+        position: fixed;
+        z-index: 1;
+        width: 1px;
+        background-color: #e5edf5;
+    }
+
+    body::before {
+        left: 2.5vw;
+    }
+
+    body::after {
+        right: 2.5vw;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    /* Header Section Style */
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1000;
+    }
+
+
+    /* == Navigations on Header disabled == */
+    .navs {
+        display: none;
+    }
+
+    /* == buttons on Header disabled == */
+    .action-btn-container {
+        display: none;
+    }
+
+    /* ====    Hamburger Menu Visible  ===== */
+    #hamburger_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ====    Hamburger Menu Opening  ===== */
+    #hamburger_content.activate_menu {
+        transition: 1s ease-in-out;
+        display: block;
+    }
+
+    /* main section style */
+    .main-content {
+        overflow: hidden;
+    }
+
+    .main-hero-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Hero section title container */
+    .hero-title_container {
+        width: 100%;
+        padding: 0 16px;
+        margin: 0;
+        height: auto;
+    }
+
+    .hero_titles {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-bottom: 35px;
+        padding: 0 16px;
+    }
+
+    .hero_titles .top_title {
+        font-size: 14px;
+        margin: 70px 4px 18px 4px;
+    }
+
+    .main_title .main_text {
+        font-size: 32px;
+        line-height: 35px;
+        margin-top: 38px;
+    }
+
+    /* Hero section button */
+    .title_btn {
+        width: max-content;
+        margin-top: 35px;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+
+    /* Hero section sliding logo */
+    .logo_marquee {
+        /* border-bottom: 1px solid black; */
+        width: 100%;
+        padding: 13px 0;
+        margin: 0;
+    }
+
+    .logo_slider {
+        margin: 0 2.5vw
+    }
+
+    /* Cards sections */
+
+    /* Feature card section 01 */
+    .feature-section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .feature-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .feature-container .feature_title {
+        font-size: 10px;
+        width: 100%;
+        margin: 25px 0 25px 35px;
+    }
+
+    .feature_title p {
+        width: 80vw;
+    }
+
+    .feature-container .feature_card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 22px;
+        margin: 50px 0;
+    }
+
+    .payment_card {
+        width:100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .payment_card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .billing_card {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .billing_card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Feature section card 02 */
+    .feature_second_card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+        margin: 50px 0;
+    }
+
+    .feature_second_card .second_row_cards {
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .feature_third_card {
+        display: none;
+    }
+
+
+    /* Statistics section */
+    .stats-section {
+        width: 100%;
+        margin: 40px 0;
+        background: #161e51;
+    }
+
+    .section_container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section_container .stats-title {
+        font-size: 45px;
+        color: #fff;
+        margin: 0;
+    }
+
+    .trust_indicators {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 0;
+        margin: 20px 0;
+        border: none;
+    }
+
+    .indicators {
+        width: 80%;
+    }
+
+    .indicators h1 {
+        font-size: 45px;
+        color: #fff;
+    }
+
+    .indicators p {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    /* Call to action container */
+    .cta_main_container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cta_content_container {
+        width: 100%;
+        padding: 0 16px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta_ele1 {
+        grid-column: 1/-1;
+        padding: 0 10px;
+        margin: 10px;
+    }
+
+    .cta_ele2 {
+        padding: 0 10px;
+        margin: 15px;
+    }
+
+    .cta_ele3 {
+        padding: 0 10px;
+        margin: 15px;
+    }
+
+    /* Footer */
+    .footer_section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer_container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer_link_section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 16px;
+        margin: 0 16px;
+        border: none;
+    }
+
+    .link_col_one{
+        border: none;
+    }
+
+    .link_col_two{
+        border: none;
+        margin: 0;
+    }
+
+    .link_col_three{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .link_col_four{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    /* Footer Bottom */
+    .footer_bottom{
+        margin-top: 80px;
+        margin-left: 15px;
+    }
+}
